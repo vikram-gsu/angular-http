@@ -7,17 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var NotFoundComponent = (function () {
+    function NotFoundComponent() {
     }
-    return AppComponent;
+    return NotFoundComponent;
 }());
-AppComponent = __decorate([
+NotFoundComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: './app/app.component.html',
-        styleUrls: ['./app/app.component.css']
+        template: "\n        <div class='jumbotron text-center'>\n            <h2>404: Page Not found</h2>\n            <span>You may be lost. Go back <a routerLink=\"/\">home</a></span>\n        </div>\n    "
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], NotFoundComponent);
+exports.NotFoundComponent = NotFoundComponent;
+//# sourceMappingURL=notfound.component.js.map
